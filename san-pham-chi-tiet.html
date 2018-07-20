@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tin tức chi tiết</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/swiper/dist/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/libary/OwlCarousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <div class="header">
+        <ul class="menu-one">
+            <li class="sub_navigation--user">
+                <a id="user-head--toggle" href="javascript:void(0);">
+                    <div class="name__user">Xin chào,
+                        <span>Hoàng</span>
+                    </div>
+                    <div class="avatar__user">
+                        <img src="./assets/images/home/profile-picture.png" />
+                        <span>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </a>
+                <ul id="user-head" class="user-head" style="display: none">
+                        <li>
+                                <a href="#">
+                                    <span>Thông tin của tôi</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </a>
+                            </li>                   
+                            <li>
+                                <a href="#">
+                                    <span>Đổi mật khẩu</span>
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Đăng xuất</span>
+                                    <i class="fa fa-sign-in"></i>
+                                </a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <a href="lien-he.html">Liên hệ</a>
+            </li>
+            <li>
+                <!-- <a href="lien-ket.html">Liên kết</a> -->
+                <a id="lien-ket--toggle" href="javascript:void(0);">Liên kết</a>
+
+                <ul id="lien-ket" class="user-head" style="display: none">
+                    <li>
+                        <a href="http://vinaphone.com.vn/">
+                            <span>VNPT Vinaphone</span>
+                            <!-- <i class="fa fa-info-circle"></i> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.vnptnet.vn/">
+                            <span>VNPT Net</span>
+                            <!-- <i class="fa fa-edit"></i> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://vnptmedia.vn/">
+                            <span>VNPT Media</span>
+                            <!-- <i class="fa fa-edit"></i> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://vnpt-technology.vn/HomeAction">
+                            <span>VNPT Technology</span>
+                            <!-- <i class="fa fa-sign-in"></i> -->
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">VIE</a>
+            </li>
+        </ul>
+        <div class="deskop">
+            <ul class="menu-two">
+                <li class="left">
+                    <a href="index.html">
+                        <img src="./assets/images2/home/logo.png" />
+                    </a>
+                </li>
+                <li class="right">
+                    <ul class="main-menu">
+                        <!-- <li class="is--active"> -->
+                        <li>
+                            <a href="gioi-thieu.html">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="tin-tuc.html">Tin tức</a>
+                        </li>
+                        <li class="is--active">
+                            <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="du-an.html">Dự án</a>
+                        </li>
+                        <li>
+                            <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile">
+            <div class="top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/images2/home/logo.png" /> </a>
+                </div>
+                <div class="humbuger">
+                    <!-- <h3>Menu</h3> -->
+                    <h3></h3>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <ul class="main-menu">
+                <li>
+                    <a href="gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="tin-tuc.html">Tin tức</a>
+                </li>
+                <li>
+                    <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                </li>
+                <li>
+                    <a href="du-an.html">Dự án</a>
+                </li>
+                <li>
+                    <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                </li>
+                <li class="addtend">
+                    <a href="nguoi-dung--dang-ky.html">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>Đăng ký</a>
+                </li>
+                <li class="login">
+                    <a href="nguoi-dung--dang-nhap.html">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="page__banner" style="background-image: url(./assets/images/home/background2.png)">
+            <div class="page__banner--link">
+                <a href="index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>Trang chủ</a>
+                <span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </span>
+                <a href="tin-tuc-chi-tiet.html">Sản phẩm chi tiết</a>
+            </div>
+            <div class="newDetail__vpoint--title">
+                VNPT OLAP: Hệ thống báo cáo, tổng hợp dữ liệu động
+            </div>
+            <div class="newDetail__vpoint--date">
+                <span>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 19.07.2018</span>
+                <span>
+                    <i class="fa fa-tags" aria-hidden="true"></i> VNPT-IT</span>
+            </div>
+        </div>
+        <div class="main__partner doi-tac">
+            <ul class="nav-tabs nav-doi-tac">
+                <li class="active">
+                    <a href="san-pham-chi-tiet.html">Giới thiệu chung</a>
+                </li>
+                <li>
+                    <a href="san-pham-chi-tiet-demo.html">Demo</a>
+                </li>
+                <li>
+                    <a href="#">Hướng dẫn sử dụng</a>
+                </li>
+                <li>
+                    <a href="#">Khuyến mãi</a>
+                </li>
+                <li>
+                    <a href="#">Câu hỏi thường gặp</a>
+                </li>
+                <li>
+                    <a href="#">Thông tin liên hệ</a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+            <div class="tab-content">
+                <div class="intro">
+                    <div class="right" style="background-image: url('./assets/images/home/vnpt-olap.png');">
+                        <a href="">
+                            <img src="./assets/images/home/vnpt-olap.png" />
+                        </a>
+                    </div>
+                    <div class="left">
+                        <div class="item" style="padding-left: 10px">
+                            <h1 class="title-left" style="font-size: 20px">
+                                VNPT OLAP
+                            </h1>
+                            <div class="text">
+                                <div class="excerpt">
+                                    <p>VNPT OLAP là hệ thống báo cáo, tổng hợp dữ liệu động cho các tổ chức/doanh nghiệp của VNPT.
+                                    Hệ thống đáp ứng yêu cầu quy trình nghiệp vụ, chỉ tiêu báo cáo đa dạng của các tổ chức,
+                                    doanh nghiệp khác nhau, có khả năng mở rộng số lượng báo cáo và không hạn chế số cấp
+                                    và số lượng đơn vị. Dễ dàng thu thập và tự động tổng hợp số liệu báo cáo theo các cấp
+                                    đơn vị từ dưới lên trên</p>
+                                    <br> 
+                                    <strong>Các Hệ thống nghiệp vụ báo cáo đã có trên:</strong>
+                                    <br/> 
+                                    <p>Hệ thống báo cáo ngành tài nguyên
+                                    môi trường 
+                                    <br/>Hệ thống báo cáo ngành y tế
+                                    <br/>Hệ thống báo cáo thống kê-Tổng cục thống kê 
+                                    <br/>Hệ
+                                    thống báo cáo thông tin và truyền thông 
+                                    <br/>Hệ thống báo cáo kinh tế xã hội
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-bottom">
+                <div class="one">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./assets/images/home/logo-white.png" />
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="two">
+                    <ul>
+                        <li>
+                            <a href="gioi-thieu.html">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="tin-tuc.html">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="du-an.html">Dự án</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="three">
+                    <ul>
+                        <li>
+                            <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                        </li>
+                        <li>
+                            <a href="lien-he.html">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="thong-tin-cua-toi.html">Thông tin của tôi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="four">
+                    <h3>Copyright © 2018
+                        <br/> VNPT Information Technology</h3>
+                    <!-- <h3>Một sản phẩm của tập đoàn VNPT</h3> -->
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./assets/bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="./assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./assets/bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+        <script type="text/javascript" src="./assets/libary/OwlCarousel/js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="./assets/bower_components/wow/dist/wow.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="./assets/scripts/main.js"></script>
+        <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBB7eHHj9V0E1USlGpcodMRRwNT_azBzkQ"></script> -->
+        <script type="text/javascript">
+        // var gmap = new google.maps.LatLng(21.009477, 105.863234);
+        // var markerAqua;
+        // var markerPlaces = [];
+        // var latLngPlaces = [];
+        // var locationPlaces = [
+        //     ['số 1 Lương Yên', 21.009477, 105.863234],
+        //     ['79 Nguyễn Ngọc Vũ', 21.012063, 105.806317],
+        //     ['232 Đê La Thành', 21.021091, 105.826152],
+        // ];
+        // window.directionsService = new google.maps.DirectionsService();
+        // window.directionsDisplay = new google.maps.DirectionsRenderer();
+
+        // function initialize() {
+        //     var mapProp = {
+        //         center: new google.maps.LatLng(21.009477, 105.863234),
+        //         zoom: 16,
+        //         mapTypeId: google.maps.MapTypeId.ROADMAP,
+        //     };
+        //     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        //     directionsDisplay.setMap(map);
+
+        //     var styles = [{
+        //         featureType: 'road.arterial',
+        //         elementType: 'all',
+        //         stylers: [
+        //             { hue: '#fff' },
+        //             { saturation: 100 },
+        //             { lightness: -48 },
+        //             { visibility: 'on' }
+        //         ]
+        //     }, {
+        //         featureType: 'road',
+        //         elementType: 'all',
+        //         stylers: []
+        //     },
+        //     {
+        //         featureType: 'water',
+        //         elementType: 'geometry.fill',
+        //         stylers: [
+        //             { color: '#adc9b8' }
+        //         ]
+        //     }, {
+        //         featureType: 'landscape.natural',
+        //         elementType: 'all',
+        //         stylers: [
+        //             { hue: '#809f80' },
+        //             { lightness: -35 }
+        //         ]
+        //     }
+        //     ];
+
+        //     var styledMapType = new google.maps.StyledMapType(styles);
+        //     map.mapTypes.set('Styled', styledMapType);
+
+        //     markerAqua = new google.maps.Marker({
+        //         map: map,
+        //         draggable: true,
+        //         animation: google.maps.Animation.DROP,
+        //     });
+        //     google.maps.event.addListener(markerAqua, 'click', toggleBounce);
+
+
+        //     var infowindow = new google.maps.InfoWindow();
+
+        //     for (i = 0; i < locationPlaces.length; i++) {
+
+        //         latLngPlaces[i] = new google.maps.LatLng(locationPlaces[i][1], locationPlaces[i][2]);
+
+        //         markerPlaces[i] = new google.maps.Marker({
+        //             position: latLngPlaces[i],
+        //             map: map,
+        //         });
+
+        //         google.maps.event.addListener(markerPlaces[i], 'click', (function (marker, i) {
+        //             return function () {
+        //                 infowindow.setContent(locationPlaces[i][0]);
+        //                 infowindow.open(map, marker);
+        //                 map.setCenter(markerPlaces[i]);
+        //             }
+        //         })(markerPlaces[i], i));
+        //     }
+        //     $(".favorable__location--name > a").click(function () {
+        //         if ($(this).parent().parent().hasClass('is_active')) {
+        //             $(this).parent().parent().removeClass('is_active');
+        //         } else {
+        //             $(".favorable__location--name > a").parent().parent().removeClass('is_active');
+        //             $(this).parent().parent().addClass('is_active');
+        //         };
+        //         var mapProp = {
+        //             center: new google.maps.LatLng($(this).attr("data-lat"), $(this).attr("data-lng")),
+        //             zoom: 16,
+        //             mapTypeId: google.maps.MapTypeId.ROADMAP,
+        //         };
+        //         var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        //         directionsDisplay.setMap(map);
+        //         for (i = 0; i < locationPlaces.length; i++) {
+
+        //             latLngPlaces[i] = new google.maps.LatLng(locationPlaces[i][1], locationPlaces[i][2]);
+
+        //             markerPlaces[i] = new google.maps.Marker({
+        //                 position: latLngPlaces[i],
+        //                 map: map,
+        //             });
+
+        //             google.maps.event.addListener(markerPlaces[i], 'click', (function (marker, i) {
+        //                 return function () {
+        //                     infowindow.setContent(locationPlaces[i][0]);
+        //                     infowindow.open(map, marker);
+        //                     map.setCenter(markerPlaces[i]);
+        //                 }
+        //             })(markerPlaces[i], i));
+        //         }
+        //         return false;
+        //     });
+        // }
+
+        // function toggleBounce() {
+
+        //     if (marker.getAnimation() !== null) {
+        //         marker.setAnimation(null);
+        //     } else {
+        //         marker.setAnimation(google.maps.Animation.BOUNCE);
+        //     }
+        // }
+
+        // google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+</body>
+
+</html>

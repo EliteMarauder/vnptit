@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tin tức chi tiết</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/swiper/dist/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/libary/OwlCarousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <div class="header">
+        <ul class="menu-one">
+            <li class="sub_navigation--user">
+                <a id="user-head--toggle" href="javascript:void(0);">
+                    <div class="name__user">Xin chào,
+                        <span>Hoàng</span>
+                    </div>
+                    <div class="avatar__user">
+                        <img src="./assets/images/home/profile-picture.png" />
+                        <span>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </a>
+                <ul id="user-head" class="user-head" style="display: none">
+                        <li>
+                                <a href="#">
+                                    <span>Thông tin của tôi</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </a>
+                            </li>                   
+                            <li>
+                                <a href="#">
+                                    <span>Đổi mật khẩu</span>
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Đăng xuất</span>
+                                    <i class="fa fa-sign-in"></i>
+                                </a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <a href="lien-he.html">Liên hệ</a>
+            </li>
+            <li>
+                    <!-- <a href="lien-ket.html">Liên kết</a> -->
+                    <a id="lien-ket--toggle" href="javascript:void(0);">Liên kết</a>
+    
+                    <ul id="lien-ket" class="user-head" style="display: none">
+                            <li>
+                                <a href="http://vinaphone.com.vn/">
+                                    <span>VNPT Vinaphone</span>
+                                    <!-- <i class="fa fa-info-circle"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.vnptnet.vn/">
+                                    <span>VNPT Net</span>
+                                    <!-- <i class="fa fa-edit"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://vnptmedia.vn/">
+                                    <span>VNPT Media</span>
+                                    <!-- <i class="fa fa-edit"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://vnpt-technology.vn/HomeAction">
+                                    <span>VNPT Technology</span>
+                                    <!-- <i class="fa fa-sign-in"></i> -->
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+            <li>
+                <a href="#">VIE</a>
+            </li>
+        </ul>
+        <div class="deskop">
+            <ul class="menu-two">
+                <li class="left">
+                    <a href="index.html">
+                        <img src="./assets/images2/home/logo.png" />
+                    </a>
+                </li>
+                <li class="right">
+                    <ul class="main-menu">
+                        <!-- <li class="is--active"> -->
+                        <li>
+                            <a href="gioi-thieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="is--active">
+                            <a href="tin-tuc.html">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="du-an.html">Dự án</a>
+                        </li>
+                        <li>
+                            <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile">
+            <div class="top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/images2/home/logo.png" /> </a>
+                </div>
+                <div class="humbuger">
+                    <!-- <h3>Menu</h3> -->
+                    <h3></h3>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <ul class="main-menu">
+                <li>
+                    <a href="gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="tin-tuc.html">Tin tức</a>
+                </li>
+                <li>
+                    <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                </li>
+                <li>
+                    <a href="du-an.html">Dự án</a>
+                </li>
+                <li>
+                    <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                </li>
+                <li class="addtend">
+                    <a href="nguoi-dung--dang-ky.html">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>Đăng ký</a>
+                </li>
+                <li class="login">
+                    <a href="nguoi-dung--dang-nhap.html">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="page__banner" style="background-image: url(./assets/images/home/background2.png)">
+            <div class="page__banner--link">
+                <a href="index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>Trang chủ</a>
+                <span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </span>
+                <a href="tin-tuc-chi-tiet.html">Tin tức chi tiết</a>
+            </div>
+            <div class="newDetail__vpoint--title">
+                VNPT-IT có hàng nghìn kỹ sư phát triển sản phẩm công nghệ mới
+            </div>
+            <div class="newDetail__vpoint--date">
+                <span>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 19.07.2018</span>
+                <span>
+                    <i class="fa fa-tags" aria-hidden="true"></i> VNPT-IT</span>
+            </div>
+        </div>
+        <div class="newDetail__vpoint clear-fix">
+            <div class="newDetail__vpoint--content">
+                <strong>
+                    Theo đề án cơ cấu lại Tập đoàn, đặc biệt theo nhu cầu phát triển trong thời đại mới, VNPT đã và đang tập trung phát triển
+                    các sản phẩm dịch vụ số phù hợp với sự phát triển của xã hội, và VNPT IT – công ty mới thành lập sẽ đảm
+                    nhiệm vai trò “đầu tàu” thực hiện sứ mệnh đó.
+                </strong>
+                <br>
+                <br>
+                <p>
+                    Theo đề án tái cơ cấu Tập đoàn VNPT giai đoạn 2018-2020 đã được Chính phủ phê duyệt, VNPT đã hướng mục tiêu đầu tư phát triển
+                    để trở thành Nhà cung cấp dịch vụ số (Digital Services) hàng đầu tại Việt Nam và Trung tâm giao dịch
+                    số (Digital Hub) tại thị trường khu vực và thế giới. Bên cạnh đó, VNPT cũng từng bước chuyển dịch cơ
+                    cấu tăng trưởng từ các dịch vụ viễn thông truyền thống sang dịch vụ viễn thông, CNTT và dịch vụ số theo
+                    chiến lược phát triển giai đoạn 2017 - 2025. Việc thành lập công ty VNPT-IT sẽ giúp VNPT có những bước
+                    tiến mạnh mẽ trong nghiên cứu, phát triển các sản phẩm dịch vụ, phát triển tích hợp các giải pháp ICT
+                    phục vụ khách hàng VNPT.
+                </p>
+                <br>
+
+                <img src="./assets/images/tin-tuc/tin-tuyen-dung.png">
+                <p>
+                    “Trong những năm qua, với xu thế của công nghệ trên thế giới, chúng tôi đã tập trung nghiên cứu về IoT, bigdata, những nền
+                    tảng này phục vụ cho những ứng dụng thiết thực cho cuộc sống. Đặc biệt chúng tôi cũng đã hình thành được
+                    những hạ tầng để cung cấp giúp cho các nhà phát triển cũng như các nhà ứng dụng sử dụng các dịch vụ liên
+                    quan tới IoT. Đối với bigdata, chúng tôi cũng tập trung để đưa ra những giải pháp tốt nhất có thể phân
+                    tích dữ liệu dựa trên những chuyên ngành”, ông Huỳnh Quang Liêm chia sẻ với báo chí bên lề buổi họp báo
+                    phát động Giải thưởng Nhân tài Đất Việt 2018 diễn ra chiều 23/4/2018.
+                </p>
+                <br>
+                <p>
+                    Hiện nay các dịch vụ CNTT hay còn gọi dịch vụ số cho doanh nghiệp của VNPT có 3 mảng ứng dụng chính gồm mảng ứng dụng liên
+                    quan tới chăm sóc sức khỏe, giáo dục và chính phủ điện tử (bao gồm cả smartcity).
+
+
+                </p>
+                <br>
+                <p>
+                    Đặc biệt, khi mà xu thế hiện nay có rất nhiều tỉnh, thành phố đang đi đến mô hình đô thị thông minh và VNPT đã hỗ trợ, tư
+                    vấn nhiều tỉnh thành phát triển đô thị thông minh. Theo ông Liêm, để phát triển đô thị thông minh cần
+                    phải có những nền tảng cơ sở hạ tầng tốt, đặc biệt những nền tảng không thể thiếu được là nền tảng IoT,
+                    nền tảng cơ sở dữ liệu lớn, trí tuệ nhân tạo. Toàn bộ những nền tảng đó, VNPT đã tư vấn và đưa vào đề
+                    án để cho các đơn vị tỉnh, thành phố có những bước triển khai phù hợp và đáp ứng được nhu cầu phát triển
+                    của địa phương mình cũng như phù hợp với phát triển của thời đại.
+                </p>
+                <ul class="newDetail__vpoint--social">
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./assets/images/tin-tuc/messenger.png">
+                            </span>Gửi</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./assets/images/tin-tuc/like.png">
+                            </span>
+                            Like</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./assets/images/tin-tuc/facebook.png">
+                            </span>
+                            Chia sẻ
+                            <span class="number">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <div class="favorable__location">
+                    <div class="favorable__location--title">
+                        Địa điểm áp dụng ưu đãi này (3)
+                    </div>                    
+                    <div class="favorable__location--contentDesktop">
+                        <div class="favorable__location--contentLeft">
+                            <div class="favorable__location--info is_active">
+                                <div class="favorable__location--name">
+                                    <a href="#" data-lat="21.009477" data-lng="105.863234">
+                                        1 Lương Yên, Hai Bà Trưng, Hà Nội
+                                    </a>
+                                </div>
+                                <div class="favorable__location--detail">
+                                    <span>
+                                        <a href="tel: 84439749999">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> (+84) 43 974 9999</a>
+                                    </span>
+                                    <span>
+                                        <a target="_blank" href="https://www.google.com/maps/place/1+L%C6%B0%C6%A1ng+Y%C3%AAn,+B%E1%BA%A1ch+%C4%90%E1%BA%B1ng,+Hai+B%C3%A0+Tr%C6%B0ng,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.009477,105.8610453,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf776b69417:0x96953fb553955729!8m2!3d21.009477!4d105.863234?hl=vi-VN">
+                                            <i class="fa fa-location-arrow" aria-hidden="true"></i> Chỉ đường</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="favorable__location--info">
+                                <div class="favorable__location--name">
+                                    <a href="#" data-lat="21.012063" data-lng="105.806317">
+                                        79 Nguyễn Ngọc Vũ, Cầu Giấy, Hà Nội
+                                    </a>
+                                </div>
+                                <div class="favorable__location--detail">
+                                    <span>
+                                        <a href="tel: 84439749999">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> (+84) 43 974 9999</a>
+                                    </span>
+                                    <span>
+                                        <a target="_blank" href="https://www.google.com/maps/place/79+Nguy%E1%BB%85n+Ng%E1%BB%8Dc+V%C5%A9,+Trung+Ho%C3%A0,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.012063,105.8041283,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab601b4fb191:0x509f18376bd3a88e!8m2!3d21.012063!4d105.806317?hl=vi-VN">
+                                            <i class="fa fa-location-arrow" aria-hidden="true"></i> Chỉ đường</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="favorable__location--info">
+                                <div class="favorable__location--name">
+                                    <a href="#" data-lat="21.021091" data-lng="105.826152">
+                                        232 Đê La Thành, Đống Đa, Hà Nội
+                                    </a>
+                                </div>
+                                <div class="favorable__location--detail">
+                                    <span>
+                                        <a href="tel: 84439749999">
+                                            <i class="fa fa-phone" aria-hidden="true"></i> (+84) 43 974 9999</a>
+                                    </span>
+                                    <span>
+                                        <a target="_blank" href="https://www.google.com/maps/search/+232+%C4%90%C3%AA+La+Th%C3%A0nh,+%C4%90%E1%BB%91ng+%C4%90a,+H%C3%A0+N%E1%BB%99i/@21.0246881,105.8075988,15z/data=!3m1!4b1?hl=vi-VN">
+                                            <i class="fa fa-location-arrow" aria-hidden="true"></i> Chỉ đường</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="favorable__location--contentRight" id="googleMap"></div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="newDetail__vpoint--advertisement">
+                <img src="./assets/images/ve-vpoint/Screenshot-2017-07-18-16.56.57.png">
+                <img src="./assets/images/tin-tuc/banner-vntrip.png">
+            </div>
+            <div class="newDetail__vpoint--involve">
+                <h3 class="vpoint__involve--title">Tin tức liên quan</h3>
+                <div class="news__vpoint--list">
+
+                    <div class="news__favorable--item">
+                        <div class="news__favorable--itemImg">
+                            <a href="#" style="background-image: url('./assets/images/home/traluong-cao.png');">
+                                <img src="./assets/images/home/traluong-cao.png" />
+                            </a>
+                            <!-- <div class="news__favorable--text">
+                                <ul class="left">
+                                    <li class="green">
+                                        <a href="#">Nhóm sản phẩm dịch vụ cấp 0 111111111111111111111111111111 dd</a>
+                                    </li>
+                                    <li class="white">
+                                        <a href="#">AEON Mall</a>
+                                    </li>
+                                </ul>
+                                <div class="right">
+                                    <h3>Tích điểm</h3>
+                                    <h3>10
+                                        <span>%</span>
+                                    </h3>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="news__vpoint--itemContent">
+                            <div class="vpoint__item--title">
+                                <a href="#">
+                                    VNPT sẵn sàng trả lương cao cho những tài năng thực sự
+                                </a>
+                            </div>
+                            <div class="vpoint__item--shortContent">
+                                Với mục tiêu trở thành nhà cung cấp dịch vụ số hàng đầu tại Việt Nam và Trung tâm giao dịch số (Digital Hub) tại thị trường
+                                khu vực và thế giới, VNPT đang thực hiện chiến lược VNPT 3.0 nên rất cần lực lượng trẻ, những
+                                nhân tài để tạo sự đột phá trong quá trình chuyển đổi số.
+                            </div>
+                            <div class="vpoint__item--plus">
+                                <a href="tin-tuc-chi-tiet.html" class="btn__readMore">Chi tiết
+                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news__favorable--item">
+                        <div class="news__favorable--itemImg">
+                            <a href="#" style="background-image: url('./assets/images/home/traluong-cao.png');">
+                                <img src="./assets/images/home/traluong-cao.png" />
+                            </a>
+                            <!-- <div class="news__favorable--text">
+                                    <ul class="left">
+                                        <li class="green">
+                                            <a href="#">Nhóm sản phẩm dịch vụ cấp 0 111111111111111111111111111111 dd</a>
+                                        </li>
+                                        <li class="white">
+                                            <a href="#">AEON Mall</a>
+                                        </li>
+                                    </ul>
+                                    <div class="right">
+                                        <h3>Tích điểm</h3>
+                                        <h3>10
+                                            <span>%</span>
+                                        </h3>
+                                    </div>
+                                </div> -->
+                        </div>
+                        <div class="news__vpoint--itemContent">
+                            <div class="vpoint__item--title">
+                                <a href="#">
+                                    VNPT sẵn sàng trả lương cao cho những tài năng thực sự
+                                </a>
+                            </div>
+                            <div class="vpoint__item--shortContent">
+                                Với mục tiêu trở thành nhà cung cấp dịch vụ số hàng đầu tại Việt Nam và Trung tâm giao dịch số (Digital Hub) tại thị trường
+                                khu vực và thế giới, VNPT đang thực hiện chiến lược VNPT 3.0 nên rất cần lực lượng trẻ, những
+                                nhân tài để tạo sự đột phá trong quá trình chuyển đổi số.
+                            </div>
+                            <div class="vpoint__item--plus">
+                                <a href="tin-tuc-chi-tiet.html" class="btn__readMore">Chi tiết
+                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news__favorable--item">
+                        <div class="news__favorable--itemImg">
+                            <a href="#" style="background-image: url('./assets/images/home/traluong-cao.png');">
+                                <img src="./assets/images/home/traluong-cao.png" />
+                            </a>
+                            <!-- <div class="news__favorable--text">
+                                        <ul class="left">
+                                            <li class="green">
+                                                <a href="#">Nhóm sản phẩm dịch vụ cấp 0 111111111111111111111111111111 dd</a>
+                                            </li>
+                                            <li class="white">
+                                                <a href="#">AEON Mall</a>
+                                            </li>
+                                        </ul>
+                                        <div class="right">
+                                            <h3>Tích điểm</h3>
+                                            <h3>10
+                                                <span>%</span>
+                                            </h3>
+                                        </div>
+                                    </div> -->
+                        </div>
+                        <div class="news__vpoint--itemContent">
+                            <div class="vpoint__item--title">
+                                <a href="#">
+                                    VNPT sẵn sàng trả lương cao cho những tài năng thực sự
+                                </a>
+                            </div>
+                            <div class="vpoint__item--shortContent">
+                                Với mục tiêu trở thành nhà cung cấp dịch vụ số hàng đầu tại Việt Nam và Trung tâm giao dịch số (Digital Hub) tại thị trường
+                                khu vực và thế giới, VNPT đang thực hiện chiến lược VNPT 3.0 nên rất cần lực lượng trẻ, những
+                                nhân tài để tạo sự đột phá trong quá trình chuyển đổi số.
+                            </div>
+                            <div class="vpoint__item--plus">
+                                <a href="tin-tuc-chi-tiet.html" class="btn__readMore">Chi tiết
+                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-bottom">
+            <div class="one">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/images/home/logo-white.png" />
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="two">
+                <ul>
+                    <li>
+                        <a href="gioi-thieu.html">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="tin-tuc.html">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                    </li>
+                    <li>
+                        <a href="du-an.html">Dự án</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="three">
+                <ul>
+                    <li>
+                        <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                    </li>
+                    <li>
+                        <a href="lien-he.html">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="thong-tin-cua-toi.html">Thông tin của tôi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="four">
+                <h3>Copyright © 2018
+                    <br/> VNPT Information Technology</h3>
+                <!-- <h3>Một sản phẩm của tập đoàn VNPT</h3> -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/libary/OwlCarousel/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/wow/dist/wow.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+    <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBB7eHHj9V0E1USlGpcodMRRwNT_azBzkQ"></script> -->
+    <script type="text/javascript">
+        // var gmap = new google.maps.LatLng(21.009477, 105.863234);
+        // var markerAqua;
+        // var markerPlaces = [];
+        // var latLngPlaces = [];
+        // var locationPlaces = [
+        //     ['số 1 Lương Yên', 21.009477, 105.863234],
+        //     ['79 Nguyễn Ngọc Vũ', 21.012063, 105.806317],
+        //     ['232 Đê La Thành', 21.021091, 105.826152],
+        // ];
+        // window.directionsService = new google.maps.DirectionsService();
+        // window.directionsDisplay = new google.maps.DirectionsRenderer();
+
+        // function initialize() {
+        //     var mapProp = {
+        //         center: new google.maps.LatLng(21.009477, 105.863234),
+        //         zoom: 16,
+        //         mapTypeId: google.maps.MapTypeId.ROADMAP,
+        //     };
+        //     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        //     directionsDisplay.setMap(map);
+
+        //     var styles = [{
+        //         featureType: 'road.arterial',
+        //         elementType: 'all',
+        //         stylers: [
+        //             { hue: '#fff' },
+        //             { saturation: 100 },
+        //             { lightness: -48 },
+        //             { visibility: 'on' }
+        //         ]
+        //     }, {
+        //         featureType: 'road',
+        //         elementType: 'all',
+        //         stylers: []
+        //     },
+        //     {
+        //         featureType: 'water',
+        //         elementType: 'geometry.fill',
+        //         stylers: [
+        //             { color: '#adc9b8' }
+        //         ]
+        //     }, {
+        //         featureType: 'landscape.natural',
+        //         elementType: 'all',
+        //         stylers: [
+        //             { hue: '#809f80' },
+        //             { lightness: -35 }
+        //         ]
+        //     }
+        //     ];
+
+        //     var styledMapType = new google.maps.StyledMapType(styles);
+        //     map.mapTypes.set('Styled', styledMapType);
+
+        //     markerAqua = new google.maps.Marker({
+        //         map: map,
+        //         draggable: true,
+        //         animation: google.maps.Animation.DROP,
+        //     });
+        //     google.maps.event.addListener(markerAqua, 'click', toggleBounce);
+
+
+        //     var infowindow = new google.maps.InfoWindow();
+
+        //     for (i = 0; i < locationPlaces.length; i++) {
+
+        //         latLngPlaces[i] = new google.maps.LatLng(locationPlaces[i][1], locationPlaces[i][2]);
+
+        //         markerPlaces[i] = new google.maps.Marker({
+        //             position: latLngPlaces[i],
+        //             map: map,
+        //         });
+
+        //         google.maps.event.addListener(markerPlaces[i], 'click', (function (marker, i) {
+        //             return function () {
+        //                 infowindow.setContent(locationPlaces[i][0]);
+        //                 infowindow.open(map, marker);
+        //                 map.setCenter(markerPlaces[i]);
+        //             }
+        //         })(markerPlaces[i], i));
+        //     }
+        //     $(".favorable__location--name > a").click(function () {
+        //         if ($(this).parent().parent().hasClass('is_active')) {
+        //             $(this).parent().parent().removeClass('is_active');
+        //         } else {
+        //             $(".favorable__location--name > a").parent().parent().removeClass('is_active');
+        //             $(this).parent().parent().addClass('is_active');
+        //         };
+        //         var mapProp = {
+        //             center: new google.maps.LatLng($(this).attr("data-lat"), $(this).attr("data-lng")),
+        //             zoom: 16,
+        //             mapTypeId: google.maps.MapTypeId.ROADMAP,
+        //         };
+        //         var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        //         directionsDisplay.setMap(map);
+        //         for (i = 0; i < locationPlaces.length; i++) {
+
+        //             latLngPlaces[i] = new google.maps.LatLng(locationPlaces[i][1], locationPlaces[i][2]);
+
+        //             markerPlaces[i] = new google.maps.Marker({
+        //                 position: latLngPlaces[i],
+        //                 map: map,
+        //             });
+
+        //             google.maps.event.addListener(markerPlaces[i], 'click', (function (marker, i) {
+        //                 return function () {
+        //                     infowindow.setContent(locationPlaces[i][0]);
+        //                     infowindow.open(map, marker);
+        //                     map.setCenter(markerPlaces[i]);
+        //                 }
+        //             })(markerPlaces[i], i));
+        //         }
+        //         return false;
+        //     });
+        // }
+
+        // function toggleBounce() {
+
+        //     if (marker.getAnimation() !== null) {
+        //         marker.setAnimation(null);
+        //     } else {
+        //         marker.setAnimation(google.maps.Animation.BOUNCE);
+        //     }
+        // }
+
+        // google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</body>
+
+</html>

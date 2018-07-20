@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tích hợp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/swiper/dist/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/libary/OwlCarousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+    <style>
+        .right-image-fix{
+            padding:97px 8.345% 0px 0px;
+            background-image:none !important;
+        }
+
+        .right-image-fix img{
+            display:block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul class="menu-one">
+            <li>
+                <a href="lien-he.html">Liên hệ</a>
+            </li>
+            <li>
+                    <!-- <a href="lien-ket.html">Liên kết</a> -->
+                    <a id="lien-ket--toggle" href="javascript:void(0);">Liên kết</a>
+    
+                    <ul id="lien-ket" class="user-head" style="display: none">
+                            <li>
+                                <a href="http://vinaphone.com.vn/">
+                                    <span>VNPT Vinaphone</span>
+                                    <!-- <i class="fa fa-info-circle"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.vnptnet.vn/">
+                                    <span>VNPT Net</span>
+                                    <!-- <i class="fa fa-edit"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://vnptmedia.vn/">
+                                    <span>VNPT Media</span>
+                                    <!-- <i class="fa fa-edit"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://vnpt-technology.vn/HomeAction">
+                                    <span>VNPT Technology</span>
+                                    <!-- <i class="fa fa-sign-in"></i> -->
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+            <li>
+                <a href="#">VIE</a>
+            </li>
+        </ul>
+        <div class="deskop">
+            <ul class="menu-two">
+                <li class="left">
+                    <a href="index.html">
+                        <img src="./assets/images2/home/logo.png" />
+                    </a>
+                </li>
+                <li class="right">
+                    <ul class="main-menu">
+                        <!-- <li class="is--active"> -->
+                        <li>
+                            <a href="gioi-thieu.html">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="tin-tuc.html">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="du-an.html">Dự án</a>
+                        </li>
+                        <li>
+                            <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                        </li>
+                        <li class="login">
+                            <a href="nguoi-dung--dang-nhap.html">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                        </li>
+                        <li class="addtend">
+                            <a href="nguoi-dung--dang-ky.html" class="btn">
+                                <i class="fa fa-credit-card" aria-hidden="true"></i>Đăng ký</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile">
+            <div class="top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/images2/home/logo.png" /> </a>
+                </div>
+                <div class="humbuger">
+                    <!-- <h3>Menu</h3> -->
+                    <h3></h3>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <ul class="main-menu">
+                <li>
+                    <a href="gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="tin-tuc.html">Tin tức</a>
+                </li>
+                <li>
+                    <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                </li>
+                <li>
+                    <a href="du-an.html">Dự án</a>
+                </li>
+                <li>
+                    <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                </li>
+                <li class="addtend">
+                    <a href="nguoi-dung--dang-ky.html">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>Đăng ký</a>
+                </li>
+                <li class="login">
+                    <a href="nguoi-dung--dang-nhap.html">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="page__banner" style="background-image: url('./assets/images/home/background2.png');">
+            <div class="page__banner--link">
+                <a href="#">
+                    <i class="fa fa-home" aria-hidden="true"></i>Trang chủ</a>
+                <span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </span>
+                <a href="#">Sản phẩm dịch vụ</a>
+            </div>
+
+            <ul class="tab_menu--child">
+                <span class="js-line-active"></span>
+
+                <li class="is--active2">
+                    <a href="san-pham-dich-vu.html">Giải pháp chuyên nghành</a>
+                </li>
+
+                <li class="is--active2">
+                    <a href="spdv-an-toan.html">An toàn bảo mật</a>
+                </li>
+
+                <li class="is--active2">
+                    <a href="spdv-tich-hop.html">Tích hợp hệ thống</a>
+                </li>
+
+                <li class="is--active">
+                    <a href="spdv-dien-tu.html">Dịch vụ điện tử</a>
+                </li>
+
+                <li class="is--active2">
+                    <a href="spdv-tt-du-lieu.html">Trung tâm dữ liệu</a>
+                </li>
+
+            </ul>
+
+            <div class="tab__item-mobile">
+                <div class="tab-category">
+                    Title active
+                </div>
+                <ul class="select-tab">
+
+                    <li>
+                        <a href="san-pham-dich-vu.html">Giải pháp chuyên nghành</a>
+                    </li>
+
+                    <li>
+                        <a href="spdv-an-toan.html">An toàn bảo mật</a>
+                    </li>
+
+                    <li>
+                        <a href="spdv-tich-hop.html">Tích hợp hệ thống</a>
+                    </li>
+
+                    <li>
+                        <a href="spdv-dien-tu.html">Dịch vụ điện tử</a>
+                    </li>
+
+                    <li>
+                        <a href="spdv-tt-du-lieu.html">Trung tâm dữ liệu</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="intr--Vpoint-card">
+            <div class="intr__loyalty-cards">
+                <div class="intr__loyalty-cards--left">
+                    <div class="intr__loyalty-cards--leftIfm">
+                        <h1 class="title-left intr__loyalty-cards--leftTitle">
+                            <!-- Thẻ tích điểm đa năng Vpoint -->
+                            Giới thiệu chung
+                        </h1>
+                        <div class="intr__loyalty-cards--leftText">
+
+
+                            Giải pháp chuyên nghành là lĩnh vực mũi nhọn của VNPT trong việc nghiên cứu, phát triển các giải pháp phần mềm, đã dành nhiều
+                            giải thưởng quốc gia uy tín trong lĩnh vực công nghệ thông tin như: giải thưởng Sao khuê, giải
+                            thưởng Nhân Tài Đất Việt… Công ty phần mềm VNPT đang cung cấp các sản phẩm, dịch vụ cho nhiều
+                            tổ chức, bộ ngành, doanh nghiệp của quốc gia như: Cổng thông tin chính phủ; Website Đảng cộng
+                            sản Việt nam; Cổng dữ liệu Bộ Y tế; Bộ thông tin truyền thông...
+
+                            <!-- Với thẻ tích điểm đa năng Vpoint, khách hàng không cần lưu trữ quá nhiều thẻ khách hàng thân thiết trong ví với các giá trị ưu đãi nhỏ lẻ theo từng cửa hàng, thay vào đó, số điểm tích lũy từ các cửa hàng được CỘNG DỒN trong thẻ, khách hàng có thể sử dụng số điểm này để THANH TOÁN một phần hoặc toàn bộ giá trị mua hàng trong lần mua tiếp theo. -->
+                        </div>
+                    </div>
+                </div>
+                <div class="intr__loyalty-cards--right right-image-fix">
+                    <img src="./assets/images/home/linhvuc.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="news__vpoint">
+                
+                <div class="news__vpoint--list">
+                    
+                    <div class="news__vpoint--item">
+                        <div class="news__vpoint--itemImg">
+                            <a href="san-pham-chi-tiet.html" style="background-image: url('./assets/images/home/intro-image1.png');">
+                                <img src="./assets/images/home/intro-image1.png" />
+                            </a>
+                            
+                        </div>
+                        <div class="news__vpoint--itemContent">
+                            <div class="vpoint__item--title">
+                                <a href="san-pham-chi-tiet.html">
+                                    Phần mềm báo cáo phân tích số liệu động
+                                </a>
+                            </div>
+                            <div class="vpoint__item--shortContent">
+                                    Hệ thống báo cáo, tổng hợp dữ liệu động.Không phụ thuộc vào các hệ thống đang sử dụng. Chủ động thiết lập mẫu báo cáo.
+                            </div>
+                            <div class="vpoint__item--plus">
+                                <a href="san-pham-chi-tiet.html" class="btn__readMore">Chi tiết <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                <div class="vpoint__item--share">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="news__vpoint--item">
+                        <div class="news__vpoint--itemImg">
+                            <a href="san-pham-chi-tiet.html" style="background-image: url('./assets/images/home/intro-image2.png');">
+                                <img src="./assets/images/home/intro-image2.png" />
+                            </a>
+                            
+                        </div>
+                        <div class="news__vpoint--itemContent">
+                                <div class="vpoint__item--title">
+                                    <a href="san-pham-chi-tiet.html">
+                                        Phần mềm báo cáo phân tích số liệu động
+                                    </a>
+                                </div>
+                                <div class="vpoint__item--shortContent">
+                                        Hệ thống báo cáo, tổng hợp dữ liệu động.Không phụ thuộc vào các hệ thống đang sử dụng. Chủ động thiết lập mẫu báo cáo.
+                                </div>
+                                <div class="vpoint__item--plus">
+                                    <a href="san-pham-chi-tiet.html" class="btn__readMore">Chi tiết <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                    <div class="vpoint__item--share">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="news__vpoint--item">
+                        <div class="news__vpoint--itemImg">
+                            <a href="san-pham-chi-tiet.html" style="background-image: url('./assets/images/home/intro-image3.png');">
+                                <img src="./assets/images/home/intro-image3.png" />
+                            </a>
+                      
+                        </div>
+                        <div class="news__vpoint--itemContent">
+                                <div class="vpoint__item--title">
+                                    <a href="san-pham-chi-tiet.html">
+                                        Phần mềm báo cáo phân tích số liệu động
+                                    </a>
+                                </div>
+                                <div class="vpoint__item--shortContent">
+                                        Hệ thống báo cáo, tổng hợp dữ liệu động.Không phụ thuộc vào các hệ thống đang sử dụng. Chủ động thiết lập mẫu báo cáo.
+                                </div>
+                                <div class="vpoint__item--plus">
+                                    <a href="san-pham-chi-tiet.html" class="btn__readMore">Chi tiết <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                    <div class="vpoint__item--share">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="news__vpoint--item">
+                        <div class="news__vpoint--itemImg">
+                            <a href="san-pham-chi-tiet.html" style="background-image: url('./assets/images/home/intro-image4.png');">
+                                <img src="./assets/images/home/intro-image4.png" />
+                            </a>
+                          
+                        </div>
+                        <div class="news__vpoint--itemContent">
+                                <div class="vpoint__item--title">
+                                    <a href="san-pham-chi-tiet.html">
+                                        Phần mềm báo cáo phân tích số liệu động
+                                    </a>
+                                </div>
+                                <div class="vpoint__item--shortContent">
+                                        Hệ thống báo cáo, tổng hợp dữ liệu động.Không phụ thuộc vào các hệ thống đang sử dụng. Chủ động thiết lập mẫu báo cáo.
+                                </div>
+                                <div class="vpoint__item--plus">
+                                    <a href="san-pham-chi-tiet.html" class="btn__readMore">Chi tiết <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                    <div class="vpoint__item--share">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="news__vpoint--item">
+                        <div class="news__vpoint--itemImg">
+                            <a href="san-pham-chi-tiet.html" style="background-image: url('./assets/images/home/intro-image5.png');">
+                                <img src="./assets/images/home/intro-image5.png" />
+                            </a>
+                            
+                        </div>
+                        <div class="news__vpoint--itemContent">
+                                <div class="vpoint__item--title">
+                                    <a href="san-pham-chi-tiet.html">
+                                        Phần mềm báo cáo phân tích số liệu động
+                                    </a>
+                                </div>
+                                <div class="vpoint__item--shortContent">
+                                        Hệ thống báo cáo, tổng hợp dữ liệu động.Không phụ thuộc vào các hệ thống đang sử dụng. Chủ động thiết lập mẫu báo cáo.
+                                </div>
+                                <div class="vpoint__item--plus">
+                                    <a href="san-pham-chi-tiet.html" class="btn__readMore">Chi tiết <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                    <div class="vpoint__item--share">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="news__vpoint--item">
+                        <div class="news__vpoint--itemImg">
+                            <a href="san-pham-chi-tiet.html" style="background-image: url('./assets/images/home/intro-image6.png');">
+                                <img src="./assets/images/home/intro-image6.png" />
+                            </a>
+                            
+                        </div>
+                        <div class="news__vpoint--itemContent">
+                                <div class="vpoint__item--title">
+                                    <a href="san-pham-chi-tiet.html">
+                                        Phần mềm báo cáo phân tích số liệu động
+                                    </a>
+                                </div>
+                                <div class="vpoint__item--shortContent">
+                                        Hệ thống báo cáo, tổng hợp dữ liệu động.Không phụ thuộc vào các hệ thống đang sử dụng. Chủ động thiết lập mẫu báo cáo.
+                                </div>
+                                <div class="vpoint__item--plus">
+                                    <a href="san-pham-chi-tiet.html" class="btn__readMore">Chi tiết <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                    <div class="vpoint__item--share">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                </div>
+                <!-- ======panigation===== -->
+                <ul class="vpoint__panigation">
+
+    </div><!--End .main-->
+
+    <div class="footer-top">
+        <div class="right">
+            <!-- <a href="#" class="btn">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>Tham gia VPoint</a>
+                    <p>hoặc tải ứng dụng từ</p> -->
+            <a href="#" class="share-btn">
+                <img src="./assets/images/home/ggplay.png" />
+            </a>
+            <a href="#" class="share-btn share-btn-last">
+                <img src="./assets/images/home/app_store.png" />
+            </a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="footer">
+        <div class="footer-bottom">
+            <div class="one">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/images/home/logo-white.png" />
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="two">
+                <ul>
+                    <li>
+                        <a href="gioi-thieu.html">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="tin-tuc.html">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                    </li>
+                    <li>
+                        <a href="du-an.html">Dự án</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="three">
+                <ul>
+                    <li>
+                        <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                    </li>
+                    <li>
+                        <a href="lien-he.html">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="thong-tin-cua-toi.html">Thông tin của tôi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="four">
+                <h3>Copyright © 2018
+                    <br/> VNPT Information Technology</h3>
+                <!-- <h3>Một sản phẩm của tập đoàn VNPT</h3> -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/libary/OwlCarousel/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/wow/dist/wow.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+
+
+    <script>
+        $(".footer-top").css("display", "none");
+    </script>
+
+</body>
+
+</html>

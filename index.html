@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trang chủ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/swiper/dist/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/libary/OwlCarousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <div class="header">
+        <ul class="menu-one">
+            <li>
+                <a href="lien-he.html">Liên hệ</a>
+            </li>
+            <li>
+                    <!-- <a href="lien-ket.html">Liên kết</a> -->
+                    <a id="lien-ket--toggle" href="javascript:void(0);">Liên kết</a>
+    
+                    <ul id="lien-ket" class="user-head" style="display: none">
+                            <li>
+                                <a href="http://vinaphone.com.vn/">
+                                    <span>VNPT Vinaphone</span>
+                                    <!-- <i class="fa fa-info-circle"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.vnptnet.vn/">
+                                    <span>VNPT Net</span>
+                                    <!-- <i class="fa fa-edit"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://vnptmedia.vn/">
+                                    <span>VNPT Media</span>
+                                    <!-- <i class="fa fa-edit"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://vnpt-technology.vn/HomeAction">
+                                    <span>VNPT Technology</span>
+                                    <!-- <i class="fa fa-sign-in"></i> -->
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+            <li>
+                <a href="#">VIE</a>
+            </li>
+        </ul>
+        <div class="deskop">
+            <ul class="menu-two">
+                <li class="left">
+                    <a href="index.html">
+                        <img src="./assets/images2/home/logo.png" />
+                    </a>
+                </li>
+                <li class="right">
+                    <ul class="main-menu">
+                        <!-- <li class="is--active"> -->
+                        <li>
+                            <a href="gioi-thieu.html">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="tin-tuc.html">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="du-an.html">Dự án</a>
+                        </li>
+                        <li>
+                            <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                        </li>
+                        <li class="login">
+                            <a href="nguoi-dung--dang-nhap.html">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                        </li>
+                        <li class="addtend">
+                            <a href="nguoi-dung--dang-ky.html" class="btn">
+                                <i class="fa fa-credit-card" aria-hidden="true"></i>Đăng ký</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile">
+            <div class="top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/images2/home/logo.png" /> </a>
+                </div>
+                <div class="humbuger">
+                    <!-- <h3>Menu</h3> -->
+                    <h3></h3>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <ul class="main-menu">
+                <li>
+                    <a href="gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="tin-tuc.html">Tin tức</a>
+                </li>
+                <li>
+                    <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                </li>
+                <li>
+                    <a href="du-an.html">Dự án</a>
+                </li>
+                <li>
+                    <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                </li>
+                <li class="addtend">
+                    <a href="nguoi-dung--dang-ky.html">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>Đăng ký</a>
+                </li>
+                <li class="login">
+                    <a href="nguoi-dung--dang-nhap.html">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="banner">
+            <div class="owl-carousel owl-theme carousel-banner" id="carousel_banner">
+                <div class="item" style="background-image: url('./assets/images2/home/banner-homepage.png');">
+                    <div class="left  fadeInUp">
+                        <div class="text">
+                            <h1 class="sub-title">VNPT THÀNH LẬP CÔNG TY CHUYÊN VỀ CÔNG NGHỆ THÔNG TIN</h1>
+                            <h1 class="title"> VNPT INFOMATION TECHNOLOGY</h1>
+                            <div class="excerpt">
+
+                                <!-- 13 ngày - 79.990.000đ -->
+
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="tin-tuc-chi-tiet.html" class="share-btn">Xem chi tiết
+                                        <span class="icon fa fa-angle-right"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-bottom"></div>
+                    <div class="icon-scroll">
+                        <a class="scrolling-btn-banner" href="#">
+                            <img src="./assets/images/home/icon-scroll.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url('./assets/images2/home/banner-homepage1.png');">
+                    <div class="left  fadeInUp">
+                        <div class="text">
+                            <h1 class="sub-title">VNPT IT: ‘ÁT CHỦ BÀI’ CỦA </h1>
+                            <h1 class="title"> VNPT TRONG KẾ HOẠCH TẤN CÔNG THỊ TRƯỜNG SỐ</h1>
+                            <div class="excerpt">
+                                    Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT) vừa tuyên bố thành lập VNPT IT (Công ty Công nghệ thông tin VNPT). VNPT IT sẽ là "át chủ bài" của VNPT trong chiến lược trở thành nhà cung cấp dịch vụ số (Digital Services) hàng đầu tại Việt Nam và trung tâm giao dịch số (Digital Hub) tại thị trường Đông Nam Á và châu Á. 
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="tin-tuc-chi-tiet.html" class="share-btn">Xem chi tiết
+                                        <span class="icon fa fa-angle-right"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-bottom"></div>
+                    <div class="icon-scroll">
+                        <a class="scrolling-btn-banner" href="#">
+                            <img src="./assets/images/home/icon-scroll.png" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="community">
+            <div class="top">
+
+                <div class="readmore">
+                    <a href="#">Xem thêm
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="swiper-container swiper-community" id="carousel_community">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a class="item" href="#">
+                                <img src="./assets/images/home/vanphong-chinhphu.png" />
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="item" href="#">
+                                <img src="./assets/images/home/community-image2.png" />
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="item" href="#">
+                                <img src="./assets/images/home/community-image3.png" />
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="item" href="#">
+                                <img src="./assets/images/home/community-image4.png" />
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="item" href="#">
+                                <img src="./assets/images/home/community-image1.png" />
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="item" href="#">
+                                <img src="./assets/images/home/community-image2.png" />
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="item" href="#">
+                                <img src="./assets/images/home/community-image3.png" />
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="item" href="#">
+                                <img src="./assets/images/home/community-image4.png" />
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-controls">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="right" style="background-image: url('./assets/images/home/home-intro.png');">
+                <a href="#">
+                    <img src="./assets/images/home/home-intro.png" />
+                </a>
+            </div>
+            <div class="left">
+                <div class="item">
+                    <h1 class="title-left">
+                        Giới thiệu
+                    </h1>
+                    <div class="text">
+                        <div class="excerpt">VNPT IT với vai trò chiến lược của Tập đoàn sẽ có nhiệm vụ tổ chức nghiên cứu, phát triển các sản
+                            phẩm dịch vụ, phát triển tích hợp các giải pháp ICT phục vụ khách hàng VNPT. VNPT-IT sẽ trở thành
+                            trụ cột sản xuất mới của Tập đoàn về phần mềm và các ứng dụng CNTT.</div>
+                        <br>
+                        <a href="gioi-thieu.html" class="btn btn-orange">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="favorable">
+            <div class="top">
+                <h1 class="title-left">Sản phẩm dịch vụ</h1>
+                <div class="readmore">
+                    <a href="#">Xem thêm
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="swiper-container carousel-favorable" id="carousel_favorable">
+                    <div class="swiper-wrapper">
+
+
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="image" style="background-image: url('./assets/images/home/vinaphone-plus.png');">
+                                        <a href="san-pham-chi-tiet.html">
+                                            <img src="./assets/images/home/vinaphone-plus.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <ul class="left">
+                                            <!-- <li class="green">
+                                                <a href="#">VNPT</a>
+                                            </li>
+                                            <li class="white">
+                                                <a href="#">ERP</a>
+                                            </li> -->
+                                        </ul>
+                                        <!-- <div class="right">
+                                            <h3>Tích điểm</h3>
+                                            <h3>10
+                                                <span>%</span>
+                                            </h3>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="item-bottom">
+                                    <h2 class="title">
+                                        <a href="san-pham-chi-tiet.html">Vinaphone Plus: Cổng chăm sóc khách hàng thông minh của nhà mạng VinaPhone</a>
+                                    </h2>
+                                    <div class="excerpt">
+
+                                        Đây là chương trình chăm sóc khách hàng rất riêng và độc đáo của VinaPhone thể hiện qua ứng dụng VinaPhone Plus dành tặng
+                                        khách hàng nhiều quà tặng hấp dẫn như một lời tri ân khách hàng đã tin dùng VinaPhone.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="image" style="background-image: url('./assets/images/home/vnpt-olap.png');">
+                                        <a href="san-pham-chi-tiet.html">
+                                            <img src="./assets/images/home/vnpt-olap.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <ul class="left">
+                                            <!-- <li class="green">
+                                                <a href="#">VNPT</a>
+                                            </li>
+                                            <li class="white">
+                                                <a href="#">ERP</a>
+                                            </li> -->
+                                        </ul>
+                                        <!-- <div class="right">
+                                            <h3>Tích điểm</h3>
+                                            <h3>10
+                                                <span>%</span>
+                                            </h3>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="item-bottom">
+                                    <h2 class="title">
+                                        <a href="san-pham-chi-tiet.html">VNPT-OLAP: Hệ thống báo cáo, tổng hợp dữ liệu động</a>
+                                    </h2>
+                                    <div class="excerpt">
+                                            VNPT OLAP là hệ thống báo cáo, tổng hợp dữ liệu động cho các tổ chức/doanh nghiệp của VNPT. Hệ thống đáp ứng yêu cầu quy trình nghiệp vụ, chỉ tiêu báo cáo đa dạng của các tổ chức, doanh nghiệp khác nhau, có khả năng mở rộng số lượng báo cáo và không hạn chế số cấp và số lượng đơn vị. Dễ dàng thu thập và tự động tổng hợp số liệu báo cáo theo các cấp đơn vị từ dưới lên trên
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="image" style="background-image: url('./assets/images/home/vnpt-crm.png');">
+                                        <a href="san-pham-chi-tiet.html">
+                                            <img src="./assets/images/home/vnpt-crm.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <ul class="left">
+                                            <!-- <li class="green">
+                                                <a href="#">Mua sắm</a>
+                                            </li>
+                                            <li class="white">
+                                                <a href="#">AEON Mall</a>
+                                            </li> -->
+                                        </ul>
+                                        <!-- <div class="right">
+                                            <h3>Tích điểm</h3>
+                                            <h3>10
+                                                <span>%</span>
+                                            </h3>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="item-bottom">
+                                    <h2 class="title">
+                                        <a href="san-pham-chi-tiet.html">VNPT ERP: Hệ thống phần mềm quản trị doanh nghiệp, Quản lý mua hàng bán hàng, Quản lý dự án, CRM, BSC/KPI....</a>
+                                    </h2>
+                                    <div class="excerpt">
+                                            VNPT ERP là giải pháp chủ lực của VNPT trong lĩnh vực quản trị doanh nghiệp SME:
+                                            Hệ thống phần mềm quản trị doanh nghiệp VNPT ERP gồm các module tích hợp sâu được thiết kế, phát triển trên cơ sở đáp ứng các nhu cầu thực tế của doanh nghiệp về quản trị điều hành và thực hiện tác nghiệp các hoạt động sản xuất, kinh doanh, quản trị, trợ giúp lãnh đạo và các cấp quản lý ra quyết định;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="image" style="background-image: url('./assets/images/home/vnpt-hddt.png');">
+                                        <a href="san-pham-chi-tiet.html">
+                                            <img src="./assets/images/home/vnpt-hddt.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <!-- <ul class="left">
+                                            <li class="green">
+                                                <a href="#">Mua sắm</a>
+                                            </li>
+                                            <li class="white">
+                                                <a href="#">AEON Mall</a>
+                                            </li>
+                                        </ul>
+                                        <div class="right">
+                                            <h3>Tích điểm</h3>
+                                            <h3>10
+                                                <span>%</span>
+                                            </h3>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="item-bottom">
+                                    <h2 class="title">
+                                        <a href="san-pham-chi-tiet.html ">HÓA ĐƠN ĐIỆN TỬ: Dịch vụ Hóa đơn điện tử An toàn - hiệu quả</a>
+                                    </h2>
+                                    <div class="excerpt">
+                                            Hoá đơn điện tử là tập hợp các thông điệp dữ liệu điện tử về bán hàng hóa, cung ứng dịch vụ. Được Khởi tạo, Lập, Gửi, Nhận, Lưu trữ và Quản lý bằng phương tiện điện tử. Có thể chuyển đổi thành hóa đơn giấy trong nhu cầu lưu thông hàng hóa, quản lý hóa đơn của người mua
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-controls">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div id="js-favorable-pagination" class="pagination-default"></div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="top">
+                <h1 class="title-left">Tin tức</h1>
+                <div class="readmore">
+                    <a href="#">Xem thêm
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="swiper-container carousel-news" id="carousel_news">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="image" style="background-image: url('./assets/images/home/tintuc-yte.png');">
+                                        <a href="tin-tuc-chi-tiet.html">
+                                            <img src="./assets/images/home/tintuc-yte.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="right">
+                                            <h3>
+                                                <span>19</span>
+                                                <br />
+                                                <span>07</span>
+                                            </h3>
+                                            <h3>2018</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="text">
+                                        <h2 class="title">
+                                            <a href="tin-tuc-chi-tiet.html">Bệnh viện Nguyễn Trãi triển khai áp dụng phần mềm quản lý bệnh viện của VNPT</a>
+                                        </h2>
+                                        <div class="excerpt">
+                                                Phần mềm quản lý bệnh viện VNPT-HIS level 02 được Bệnh viện Nguyễn Trãi áp dụng nhằm tin học hoá việc quản lý, điều hành, kết nối toàn diện các đối tượng trong khám chữa bệnh. 
+                                        </div>
+                                        <a href="tin-tuc-chi-tiet.html" class="news-readmore">Chi tiết
+                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="image" style="background-image: url('./assets/images/home/traluong-cao.png');">
+                                        <a href="tin-tuc-chi-tiet.html">
+                                            <img src="./assets/images/home/traluong-cao.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="right">
+                                            <h3>
+                                                <span>19</span>
+                                                <br />
+                                                <span>07</span>
+                                            </h3>
+                                            <h3>2018</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="text">
+                                        <h2 class="title">
+                                            <a href="tin-tuc-chi-tiet.html">VNPT sẵn sàng trả lương cao cho những tài năng thực sự</a>
+                                        </h2>
+                                        <div class="excerpt">
+                                                Với mục tiêu trở thành nhà cung cấp dịch vụ số hàng đầu tại Việt Nam và Trung tâm giao dịch số (Digital Hub) tại thị trường khu vực và thế giới, VNPT đang thực hiện chiến lược VNPT 3.0 nên rất cần lực lượng trẻ, những nhân tài để tạo sự đột phá trong quá trình chuyển đổi số.
+                                        </div>
+                                        <a href="tin-tuc-chi-tiet.html" class="news-readmore">Chi tiết
+                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="image" style="background-image: url('./assets/images/home/tuyendung.png');">
+                                        <a href="tin-tuc-chi-tiet.html">
+                                            <img src="./assets/images/home/tuyendung.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <div class="right">
+                                            <h3>
+                                                <span>19</span>
+                                                <br />
+                                                <span>07</span>
+                                            </h3>
+                                            <h3>2018</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="text">
+                                        <h2 class="title">
+                                            <a href="tin-tuc-chi-tiet.html">VNPT-IT có hàng nghìn kỹ sư phát triển sản phẩm công nghệ mới</a>
+                                        </h2>
+                                        <div class="excerpt">
+                                                Theo đề án cơ cấu lại Tập đoàn, đặc biệt theo nhu cầu phát triển trong thời đại mới, VNPT đã và đang tập trung phát triển các sản phẩm dịch vụ số phù hợp với sự phát triển của xã hội, và VNPT IT – công ty mới thành lập sẽ đảm nhiệm vai trò “đầu tàu” thực hiện sứ mệnh đó. 
+                                        </div>
+                                        <a href="tin-tuc-chi-tiet.html" class="news-readmore">Chi tiết
+                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-controls">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div id="js-news-pagination" class="pagination-default"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-top">
+        <div class="right">
+            <!-- <a href="#" class="btn">
+                <i class="fa fa-credit-card" aria-hidden="true"></i>Tham gia VPoint</a>
+            <p>hoặc tải ứng dụng từ</p> -->
+            <a href="#" class="share-btn">
+                <img src="./assets/images/home/ggplay.png" />
+            </a>
+            <a href="#" class="share-btn share-btn-last">
+                <img src="./assets/images/home/app_store.png" />
+            </a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="footer">
+        <div class="footer-bottom">
+            <div class="one">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/images/home/logo-white.png" />
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="two">
+                <ul>
+                    <li>
+                        <a href="gioi-thieu.html">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="tin-tuc.html">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                    </li>
+                    <li>
+                        <a href="du-an.html">Dự án</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="three">
+                <ul>
+                    <li>
+                        <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                    </li>
+                    <li>
+                        <a href="lien-he.html">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="thong-tin-cua-toi.html">Thông tin của tôi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="four">
+                <h3>Copyright © 2018
+                    <br/> VNPT Information Technology</h3>
+                <!-- <h3>Một sản phẩm của tập đoàn VNPT</h3> -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/libary/OwlCarousel/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/wow/dist/wow.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+
+
+    <script>
+        jQuery(document).ready(function ($) {
+            var scrolling = $('.banner').outerHeight() + $('.header').outerHeight();
+
+            $('.scrolling-btn-banner').click(function (event) {
+                $('html, body').animate({
+                    scrollTop: scrolling
+                }, 700);
+
+                return true;
+            });
+
+            $('#carousel_banner').owlCarousel({
+                autoplay: true,
+                loop: true,
+                nav: true,
+                autoplayTimeout: 5000,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+
+            var carousel_community = new Swiper('#carousel_community', {
+                autoplay: 4000,
+                slidesPerView: 4,
+                spaceBetween: 40,
+                nextButton: '#carousel_community .swiper-button-next',
+                prevButton: '#carousel_community .swiper-button-prev',
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    600: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                }
+            });
+
+            var carousel_travel = new Swiper('#carousel_travel', {
+                pagination: '#js-travel-pagination',
+                slidesPerView: 'auto',
+                loop: true,
+                autoplay: 5000,
+                paginationClickable: true,
+                spaceBetween: 40,
+                nextButton: '#carousel_travel .swiper-button-next',
+                prevButton: '#carousel_travel .swiper-button-prev',
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    600: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                }
+            });
+
+            var carousel_favorable = new Swiper('#carousel_favorable', {
+                pagination: '#js-favorable-pagination',
+                slidesPerView: 'auto',
+                loop: true,
+                paginationClickable: true,
+                spaceBetween: 40,
+                nextButton: '#carousel_favorable .swiper-button-next',
+                prevButton: '#carousel_favorable .swiper-button-prev',
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    600: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                }
+            });
+
+            var carousel_news = new Swiper('#carousel_news', {
+                pagination: '#js-news-pagination',
+                slidesPerView: 'auto',
+                loop: true,
+                paginationClickable: true,
+                spaceBetween: 40,
+                nextButton: '#carousel_news .swiper-button-next',
+                prevButton: '#carousel_news .swiper-button-prev',
+            });
+        });
+    </script>
+
+</body>
+
+</html>

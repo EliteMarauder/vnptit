@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tin tức VNPT-IT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/swiper/dist/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/libary/OwlCarousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <div class="header">
+        <ul class="menu-one">
+            <li class="sub_navigation--user">
+                <a id="user-head--toggle" href="javascript:void(0);">
+                    <div class="name__user">Xin chào,
+                        <span>Hoàng</span>
+                    </div>
+                    <div class="avatar__user">
+                        <img src="./assets/images/home/profile-picture.png" />
+                        <span>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </a>
+                <ul id="user-head" class="user-head" style="display: none">
+                        <li>
+                                <a href="#">
+                                    <span>Thông tin của tôi</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </a>
+                            </li>                   
+                            <li>
+                                <a href="#">
+                                    <span>Đổi mật khẩu</span>
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Đăng xuất</span>
+                                    <i class="fa fa-sign-in"></i>
+                                </a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <a href="lien-he.html">Liên hệ</a>
+            </li>
+            <li>
+                    <!-- <a href="lien-ket.html">Liên kết</a> -->
+                    <a id="lien-ket--toggle" href="javascript:void(0);">Liên kết</a>
+    
+                    <ul id="lien-ket" class="user-head" style="display: none">
+                            <li>
+                                <a href="http://vinaphone.com.vn/">
+                                    <span>VNPT Vinaphone</span>
+                                    <!-- <i class="fa fa-info-circle"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.vnptnet.vn/">
+                                    <span>VNPT Net</span>
+                                    <!-- <i class="fa fa-edit"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://vnptmedia.vn/">
+                                    <span>VNPT Media</span>
+                                    <!-- <i class="fa fa-edit"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://vnpt-technology.vn/HomeAction">
+                                    <span>VNPT Technology</span>
+                                    <!-- <i class="fa fa-sign-in"></i> -->
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+            <li>
+                <a href="#">VIE</a>
+            </li>
+        </ul>
+        <div class="deskop">
+            <ul class="menu-two">
+                <li class="left">
+                    <a href="index.html">
+                        <img src="./assets/images2/home/logo.png" />
+                    </a>
+                </li>
+                <li class="right">
+                    <ul class="main-menu">
+                        <!-- <li class="is--active"> -->
+                        <li>
+                            <a href="gioi-thieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="is--active">
+                            <a href="tin-tuc.html">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="du-an.html">Dự án</a>
+                        </li>
+                        <li>
+                            <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile">
+            <div class="top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/images2/home/logo.png" /> </a>
+                </div>
+                <div class="humbuger">
+                    <!-- <h3>Menu</h3> -->
+                    <h3></h3>
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <ul class="main-menu">
+                <li>
+                    <a href="gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="tin-tuc.html">Tin tức</a>
+                </li>
+                <li>
+                    <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                </li>
+                <li>
+                    <a href="du-an.html">Dự án</a>
+                </li>
+                <li>
+                    <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                </li>
+                <li class="addtend">
+                    <a href="nguoi-dung--dang-ky.html">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>Đăng ký</a>
+                </li>
+                <li class="login">
+                    <a href="nguoi-dung--dang-nhap.html">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="page__banner" style="background-image: url(./assets/images/home/background2.png)">
+            <div class="page__banner--link">
+                <a href="index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>Trang chủ</a>
+                <span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </span>
+                <a href="tin-tuc.html">Tin tức</a>
+            </div>
+            <ul class="tab_menu--child">
+                <span class="js-line-active"></span>
+                <li class="is--active">
+                    <a href="tin-tuc.html">Tin VNPT-IT</a>
+                </li>
+                <li class="is--active2">
+                    <a href="tin-tuc-vnpt.html">Tin VNPT</a>
+                </li>
+                <li class="is--active2">
+                    <a href="tin-tuc-khuyen-mai.html">Tin khuyến mại</a>
+                </li>
+                <li class="is--active2">
+                    <a href="tin-tuc-tuyen-dung.html">Tin tuyển dụng</a>
+                </li>
+                <li class="is--active2">
+                    <a href="van-hoa-vnpt.html">Văn hóa VNPT-IT</a>
+                </li>
+            </ul>
+            <!-- =======mobile========= -->
+            <div class="tab__item-mobile">
+                <div class="tab-category">
+                    Tin VNPT-IT
+                </div>
+                <ul class="select-tab">
+                    <li>
+                        <a href="tin-tuc-vnpt.html">Tin VNPT</a>
+                    </li>
+                    <li>
+                        <a href="tin-tuc-khuyen-mai.html">Tin khuyến mại</a>
+                    </li>
+                    <li>
+                        <a href="tin-tuc-tuyen-dung.html">Tin tuyển dụng</a>
+                    </li>
+                    <li>
+                        <a href="van-hoa-vnpt.html">Văn hóa VNPT-IT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ==end== -->
+        </div>
+        <div class="news__vpoint">
+            <div class="news__vpoint--focus">
+                <div class="new__focus--left">
+                    <div class="new__focus--leftImg" style="background-image: url('./assets/images/home/tuyendung.png');">
+                        <a href="tin-tuc-chi-tiet.html">
+                            <img src="./assets/images/home/tuyendung.png" />
+                        </a>
+                    </div>
+                    <div class="news__date">
+                        <div class="right">
+                            <h3>
+                                <span>19</span>
+                                <br/>
+                                <span>07</span>
+                            </h3>
+                            <h3>2018</h3>
+                        </div>
+                    </div>
+                    <div class="new__focus--left-shortContent">
+                        <h3>VNPT-IT có hàng nghìn kỹ sư phát triển sản phẩm công nghệ mới</h3>
+                        <div class="new__focus--left-linkShare">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="new__focus--right">
+                    <div class="new__focus--rightItem">
+                        <div class="new__focus--rightContent">
+                            <div class="focus__right--shortContent">
+                                <a href="tin-tuc-chi-tiet.html">
+                                    VNPT sẵn sàng trả lương cao cho những tài năng thực sự
+                                </a>
+                            </div>
+                            <div class="focus__right--date">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i> 19.07.2018
+                            </div>
+                            <div class="focus__right--linkShare">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="new__focus--rightImg">
+                            <a href="tin-tuc-chi-tiet.html" style="background-image: url('./assets/images/home/traluong-cao.png');">
+                                <img src="./assets/images/home/traluong-cao.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="new__focus--rightItem">
+                        <div class="new__focus--rightContent">
+                            <div class="focus__right--shortContent">
+                                <a href="tin-tuc-chi-tiet.html">
+                                    Bệnh viện Nguyễn Trãi triển khai áp dụng phần mềm quản lý bệnh viện của VNPT
+                                </a>
+                            </div>
+                            <div class="focus__right--date">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i> 19.07.2018
+                            </div>
+                            <div class="focus__right--linkShare">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="new__focus--rightImg">
+                            <a href="tin-tuc-chi-tiet.html" style="background-image: url('./assets/images/home/tintuc-yte.png');">
+                                <img src="./assets/images/home/tintuc-yte.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__vpoint--list">
+
+                <div class="news__vpoint--item">
+                    <div class="news__vpoint--itemImg">
+                        <a href="tin-tuc-chi-tiet.html" style="background-image: url('./assets/images/home/vinaphone-plus.png');">
+                            <img src="./assets/images/home/vinaphone-plus.png" />
+                        </a>
+                        <div class="news__date">
+                            <div class="right">
+                                <h3>
+                                    <span>26</span>
+                                    <br/>
+                                    <span>10</span>
+                                </h3>
+                                <h3>2017</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__vpoint--itemContent">
+                        <div class="vpoint__item--title">
+                            <a href="tin-tuc-chi-tiet.html">
+                                Vinaphone Plus: Cổng chăm sóc khách hàng thông minh của nhà mạng VinaPhone
+                            </a>
+                        </div>
+                        <div class="vpoint__item--shortContent">
+                            Đây là chương trình chăm sóc khách hàng rất riêng và độc đáo của VinaPhone thể hiện qua ứng dụng VinaPhone Plus dành tặng
+                            khách hàng nhiều quà tặng hấp dẫn như một lời tri ân khách hàng đã tin dùng VinaPhone.
+                        </div>
+                        <div class="vpoint__item--plus">
+                            <a href="#" class="btn__readMore">Chi tiết
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                            <div class="vpoint__item--share">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news__vpoint--item">
+                    <div class="news__vpoint--itemImg">
+                        <a href="tin-tuc-chi-tiet.html" style="background-image: url('./assets/images/home/vinaphone-plus.png');">
+                            <img src="./assets/images/home/vinaphone-plus.png" />
+                        </a>
+                        <div class="news__date">
+                            <div class="right">
+                                <h3>
+                                    <span>26</span>
+                                    <br/>
+                                    <span>10</span>
+                                </h3>
+                                <h3>2017</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__vpoint--itemContent">
+                        <div class="vpoint__item--title">
+                            <a href="tin-tuc-chi-tiet.html">
+                                Vinaphone Plus: Cổng chăm sóc khách hàng thông minh của nhà mạng VinaPhone
+                            </a>
+                        </div>
+                        <div class="vpoint__item--shortContent">
+                            Đây là chương trình chăm sóc khách hàng rất riêng và độc đáo của VinaPhone thể hiện qua ứng dụng VinaPhone Plus dành tặng
+                            khách hàng nhiều quà tặng hấp dẫn như một lời tri ân khách hàng đã tin dùng VinaPhone.
+                        </div>
+                        <div class="vpoint__item--plus">
+                            <a href="#" class="btn__readMore">Chi tiết
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                            <div class="vpoint__item--share">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news__vpoint--item">
+                    <div class="news__vpoint--itemImg">
+                        <a href="tin-tuc-chi-tiet.html" style="background-image: url('./assets/images/home/vinaphone-plus.png');">
+                            <img src="./assets/images/home/vinaphone-plus.png" />
+                        </a>
+                        <div class="news__date">
+                            <div class="right">
+                                <h3>
+                                    <span>26</span>
+                                    <br/>
+                                    <span>10</span>
+                                </h3>
+                                <h3>2017</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__vpoint--itemContent">
+                        <div class="vpoint__item--title">
+                            <a href="tin-tuc-chi-tiet.html">
+                                Vinaphone Plus: Cổng chăm sóc khách hàng thông minh của nhà mạng VinaPhone
+                            </a>
+                        </div>
+                        <div class="vpoint__item--shortContent">
+                            Đây là chương trình chăm sóc khách hàng rất riêng và độc đáo của VinaPhone thể hiện qua ứng dụng VinaPhone Plus dành tặng
+                            khách hàng nhiều quà tặng hấp dẫn như một lời tri ân khách hàng đã tin dùng VinaPhone.
+                        </div>
+                        <div class="vpoint__item--plus">
+                            <a href="#" class="btn__readMore">Chi tiết
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                            <div class="vpoint__item--share">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news__vpoint--item">
+                    <div class="news__vpoint--itemImg">
+                        <a href="tin-tuc-chi-tiet.html" style="background-image: url('./assets/images/home/vinaphone-plus.png');">
+                            <img src="./assets/images/home/vinaphone-plus.png" />
+                        </a>
+                        <div class="news__date">
+                            <div class="right">
+                                <h3>
+                                    <span>26</span>
+                                    <br/>
+                                    <span>10</span>
+                                </h3>
+                                <h3>2017</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__vpoint--itemContent">
+                        <div class="vpoint__item--title">
+                            <a href="tin-tuc-chi-tiet.html">
+                                Vinaphone Plus: Cổng chăm sóc khách hàng thông minh của nhà mạng VinaPhone
+                            </a>
+                        </div>
+                        <div class="vpoint__item--shortContent">
+                            Đây là chương trình chăm sóc khách hàng rất riêng và độc đáo của VinaPhone thể hiện qua ứng dụng VinaPhone Plus dành tặng
+                            khách hàng nhiều quà tặng hấp dẫn như một lời tri ân khách hàng đã tin dùng VinaPhone.
+                        </div>
+                        <div class="vpoint__item--plus">
+                            <a href="#" class="btn__readMore">Chi tiết
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                            <div class="vpoint__item--share">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news__vpoint--item">
+                    <div class="news__vpoint--itemImg">
+                        <a href="tin-tuc-chi-tiet.html" style="background-image: url('./assets/images/home/vinaphone-plus.png');">
+                            <img src="./assets/images/home/vinaphone-plus.png" />
+                        </a>
+                        <div class="news__date">
+                            <div class="right">
+                                <h3>
+                                    <span>26</span>
+                                    <br/>
+                                    <span>10</span>
+                                </h3>
+                                <h3>2017</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__vpoint--itemContent">
+                        <div class="vpoint__item--title">
+                            <a href="tin-tuc-chi-tiet.html">
+                                Vinaphone Plus: Cổng chăm sóc khách hàng thông minh của nhà mạng VinaPhone
+                            </a>
+                        </div>
+                        <div class="vpoint__item--shortContent">
+                            Đây là chương trình chăm sóc khách hàng rất riêng và độc đáo của VinaPhone thể hiện qua ứng dụng VinaPhone Plus dành tặng
+                            khách hàng nhiều quà tặng hấp dẫn như một lời tri ân khách hàng đã tin dùng VinaPhone.
+                        </div>
+                        <div class="vpoint__item--plus">
+                            <a href="#" class="btn__readMore">Chi tiết
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                            <div class="vpoint__item--share">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news__vpoint--item">
+                    <div class="news__vpoint--itemImg">
+                        <a href="tin-tuc-chi-tiet.html" style="background-image: url('./assets/images/home/vinaphone-plus.png');">
+                            <img src="./assets/images/home/vinaphone-plus.png" />
+                        </a>
+                        <div class="news__date">
+                            <div class="right">
+                                <h3>
+                                    <span>26</span>
+                                    <br/>
+                                    <span>10</span>
+                                </h3>
+                                <h3>2017</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__vpoint--itemContent">
+                        <div class="vpoint__item--title">
+                            <a href="tin-tuc-chi-tiet.html">
+                                Vinaphone Plus: Cổng chăm sóc khách hàng thông minh của nhà mạng VinaPhone
+                            </a>
+                        </div>
+                        <div class="vpoint__item--shortContent">
+                            Đây là chương trình chăm sóc khách hàng rất riêng và độc đáo của VinaPhone thể hiện qua ứng dụng VinaPhone Plus dành tặng
+                            khách hàng nhiều quà tặng hấp dẫn như một lời tri ân khách hàng đã tin dùng VinaPhone.
+                        </div>
+                        <div class="vpoint__item--plus">
+                            <a href="#" class="btn__readMore">Chi tiết
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                            <div class="vpoint__item--share">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ======panigation===== -->
+            <ul class="vpoint__panigation">
+                <li class="vpoint__panigation--number">
+                    <a href="#">Trang 1/3</a>
+                </li>
+                <li class="vpoint__panigation--item">
+                    <a href="#">1</a>
+                </li>
+                <li class="vpoint__panigation--item active">
+                    <a href="#">2</a>
+                </li>
+                <li class="vpoint__panigation--item">
+                    <a href="#">3</a>
+                </li>
+                <li class="vpoint__panigation--item">
+                    <a href="#">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-bottom">
+            <div class="one">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/images/home/logo-white.png" />
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="two">
+                <ul>
+                    <li>
+                        <a href="gioi-thieu.html">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="tin-tuc.html">Tin tức</a>
+                    </li>
+                    <li>
+                        <a href="san-pham-dich-vu.html">Sản phẩm dịch vụ</a>
+                    </li>
+                    <li>
+                        <a href="du-an.html">Dự án</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="three">
+                <ul>
+                    <li>
+                        <a href="thanh-vien-vnpt-it.html">Thành viên VNPT-IT</a>
+                    </li>
+                    <li>
+                        <a href="lien-he.html">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="thong-tin-cua-toi.html">Thông tin của tôi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="four">
+                <h3>Copyright © 2018
+                    <br/> VNPT Information Technology</h3>
+                <!-- <h3>Một sản phẩm của tập đoàn VNPT</h3> -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/libary/OwlCarousel/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./assets/bower_components/wow/dist/wow.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+
+</html>
